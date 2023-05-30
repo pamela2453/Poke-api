@@ -1,0 +1,14 @@
+#inputBuscar{
+   background-color: rgb(107, 125, 182);
+   background-color: transparent;
+   box-shadow:  3px 3px 3px white;
+}
+
+#Regresar{
+   width: 10rem;
+}
+
+#Siguiente{
+   width: 10rem;
+   
+}
