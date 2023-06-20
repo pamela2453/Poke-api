@@ -26,7 +26,7 @@ const tablaProducts = async (results) => {
 
     for (const element of results) {
         let pokemonData = await fetchData(element.url);
-        let imageUrl = pokemonData.sprites.front_default;
+        let imageUrl = pokemonData.sprites.other["official-artwork"].front_default; // Obtener la URL de la imagen de tamaño mediano
 
         let abilities = pokemonData.abilities.map((ability) => ability.ability.name).join(", ");
         let stats = pokemonData.stats.map((stat) => `${stat.stat.name}: ${stat.base_stat}`).join(", ");
